@@ -12,7 +12,7 @@ BokehStates will wrap the global Bokeh state per Zeppelin notebook and is only n
 
 ## Preparation
 
-To sue Bokeh, you first need to initiate the zeppelinCommLayer (details see [https://github.com/bernhard-42/zeppelin-ipython-shim](https://github.com/bernhard-42/zeppelin-ipython-shim))
+To use Bokeh, you first need to initiate the ZeppelinCommLayer (details see [https://github.com/bernhard-42/zeppelin-ipython-shim](https://github.com/bernhard-42/zeppelin-ipython-shim))
 
 ```python
 %pyspark
@@ -24,13 +24,13 @@ resetZeppelinCommLayer(z.z)
 zcl = ZeppelinCommLayer(z.z)
 ```
 
-In the next Paragraph start the shim (note: this cannot be done in the paragraph above)
+In the next Paragraph start the shim (Note: this cannot be done in the paragraph above)
 
 ```python
 zcl.start()
 ```
 
-Finally wrap the Bokeh globa state for the current notebook
+Finally wrap the Bokeh global state for the current notebook
 
 ```python
 %pyspark
